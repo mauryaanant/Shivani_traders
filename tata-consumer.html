@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tata Consumer Products & Tata Sampann Agency | Shivani Traders — Azamgarh</title>
+  <meta name="description" content="Authorized distributor for Tata Tea, Tata Salt, Tetley, and Tata Sampann unpolished pulses and pure spices across Azamgarh and Eastern UP. Depot-direct wholesale supply.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    .brand-hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(ellipse at 70% 30%, rgba(243, 156, 18, 0.22) 0%, transparent 60%),
+                  var(--navy-900);
+      padding: calc(var(--nav-height) + 50px) var(--space-xl) var(--space-4xl);
+      overflow: hidden;
+    }
+    .brand-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-3xl);
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+    .brand-image-frame {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(243, 156, 18, 0.25);
+    }
+    .brand-image-frame img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--transition-slow);
+    }
+    .brand-image-frame:hover img {
+      transform: scale(1.03);
+    }
+    .split-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+      margin-top: var(--space-3xl);
+    }
+    .showcase-block {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-xl);
+      padding: var(--space-2xl);
+      overflow: hidden;
+    }
+    .showcase-block img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-lg);
+    }
+    .sku-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-xl);
+      margin-top: var(--space-3xl);
+    }
+    .sku-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .sku-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(243, 156, 18, 0.5);
+      box-shadow: 0 15px 35px rgba(243, 156, 18, 0.2);
+    }
+    .sku-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-md);
+    }
+    .sku-card h4 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: var(--space-xs);
+    }
+    .sku-card p {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .brand-hero-grid { grid-template-columns: 1fr; }
+      .brand-image-frame img { height: 320px; }
+      .split-showcase { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders Logo">
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-name">Shivani Traders</span>
+          <span class="brand-tagline">Tata Consumer Authorized Agency</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">← Back to Home</a>
+        <a href="#consumer" class="active">Beverages & Salt</a>
+        <a href="#sampann">Tata Sampann</a>
+        <a href="broadband.html">Shivani Broadband</a>
+        <a href="#order" class="nav-cta">Wholesale Order</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="brand-hero">
+    <div class="brand-hero-grid">
+      <div class="reveal">
+        <div class="hero-badge">
+          <span class="dot" style="background:#f39c12;"></span>
+          <span style="color:var(--gold-400);">Authorized Tata Consumer & Sampann Agency</span>
+        </div>
+
+        <h1 class="hero-title" style="font-size:clamp(2.4rem, 5vw, 3.8rem);">
+          Tata Consumer &<br>
+          <span style="background:linear-gradient(135deg, #f5b041, #f39c12, #27ae60);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            Tata Sampann Staples
+          </span>
+        </h1>
+
+        <p class="hero-description" style="color:var(--gray-300);font-size:1.1rem;line-height:1.8;">
+          India's most trusted household staples delivered with zero stock-outs. Shivani Traders 
+          is the primary agency distributor for Tata Tea, Tata Salt, Tetley, and the entire 
+          Tata Sampann portfolio of unpolished nutritious pulses and pure whole spices in Azamgarh.
+        </p>
+
+        <div class="hero-actions" style="margin-top:var(--space-2xl);">
+          <a href="#order" class="btn-primary">
+            Request Wholesale Price List
+            <i data-lucide="file-text" style="width:20px;height:20px;"></i>
+          </a>
+          <a href="https://wa.me/919621577274?text=Hello%20Shivani%20Traders,%20I%20want%20to%20inquire%20about%20Tata%20Consumer%20products" target="_blank" class="btn-outline" style="border-color:#25d366;color:#25d366;">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal delay-1">
+        <div class="brand-image-frame">
+          <img src="assets/images/brand-tata-consumer.jpg" alt="Tata Tea, Tata Salt, Tetley Green Tea">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DUAL SHOWCASE ====== -->
+  <section class="section-padding" id="consumer" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Two Flagship Pillars</div>
+        <h2 class="section-title light">Complete FMCG & Kitchen Staple Range</h2>
+        <p class="section-subtitle light">
+          From India’s #1 Tea and Salt to wholesome unpolished dals and authentic Indian spices.
+        </p>
+      </div>
+
+      <div class="split-showcase">
+        <div class="showcase-block reveal">
+          <img src="assets/images/brand-tata-consumer.jpg" alt="Tata Tea and Tata Salt">
+          <h3 style="color:var(--white);font-size:1.5rem;margin-bottom:var(--space-xs);">Tata Consumer Beverages & Salt</h3>
+          <p style="color:var(--gold-400);font-size:0.85rem;margin-bottom:var(--space-md);font-weight:600;">TATA TEA · TATA SALT · TETLEY</p>
+          <p style="color:var(--gray-300);font-size:0.95rem;line-height:1.7;">
+            Distributing Tata Tea Premium (Desh Ki Chai), Tata Tea Gold, Agni, Kanan Devan, 
+            Tata Salt Vacuum Evaporated (Desh Ka Namak), Tata Salt Lite, and Tetley Classic & Flavored Green Tea boxes.
+          </p>
+          <div class="service-tags" style="margin-top:var(--space-md);">
+            <span class="service-tag">Tata Tea Gold</span>
+            <span class="service-tag">Tata Salt 1kg</span>
+            <span class="service-tag">Tetley 100 Bags</span>
+          </div>
+        </div>
+
+        <div class="showcase-block reveal delay-1" id="sampann">
+          <img src="assets/images/brand-tata-sampann.jpg" alt="Tata Sampann Pulses and Spices">
+          <h3 style="color:var(--white);font-size:1.5rem;margin-bottom:var(--space-xs);">Tata Sampann Staples & Spices</h3>
+          <p style="color:#27ae60;font-size:0.85rem;margin-bottom:var(--space-md);font-weight:600;">UNPOLISHED DALS · PURE SPICES · POHA & BESAN</p>
+          <p style="color:var(--gray-300);font-size:0.95rem;line-height:1.7;">
+            Unpolished Toor Dal, Chana Dal, Moong Dal, Urad Dal retaining natural wholesome protein. 
+            Pure Haldi, Lal Mirch, Dhaniya powder with natural essential oils, plus Tata Sampann Poha and Besan.
+          </p>
+          <div class="service-tags" style="margin-top:var(--space-md);">
+            <span class="service-tag">Unpolished Toor Dal</span>
+            <span class="service-tag">Chana Dal</span>
+            <span class="service-tag">Turmeric with Curcumin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKU BREAKDOWN ====== -->
+  <section class="section-padding" style="background:var(--navy-900);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Wholesale SKUs</div>
+        <h2 class="section-title light">Top Moving Inventory</h2>
+      </div>
+
+      <div class="sku-grid">
+        <div class="sku-card reveal">
+          <div class="sku-icon">🍵</div>
+          <h4>Tata Tea Premium</h4>
+          <p>100g, 250g, 500g, 1kg & Pet Jars</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">✨</div>
+          <h4>Tata Tea Gold</h4>
+          <p>Exquisite long-leaf blend with rich aroma</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🧂</div>
+          <h4>Tata Salt (Iodised)</h4>
+          <p>1kg pouches in 25kg & 50kg wholesale sacks</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🌱</div>
+          <h4>Tetley Green Tea</h4>
+          <p>Lemon & Honey, Ginger, Tulsi & Classic</p>
+        </div>
+        <div class="sku-card reveal">
+          <div class="sku-icon">🌾</div>
+          <h4>Tata Sampann Toor Dal</h4>
+          <p>100% unpolished protein-rich Arhar dal</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">🟡</div>
+          <h4>Tata Sampann Chana Dal</h4>
+          <p>Naturally delicious, wholesome grain quality</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🌶️</div>
+          <h4>Sampann Pure Spices</h4>
+          <p>Turmeric, Chilli, Coriander & Garam Masala</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🥣</div>
+          <h4>Tata Sampann Poha & Besan</h4>
+          <p>Thick & Thin Poha, 100% Chana dal Besan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ORDER FORM ====== -->
+  <section class="section-padding" id="order" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Wholesale Distribution</div>
+          <h2 class="section-title">Book Bulk Supply<br><span style="color:var(--gold-400);">For Your Store</span></h2>
+          <p class="section-subtitle">
+            Direct depot prices, bulk scheme discounts, GST billing, and door-step delivery in Azamgarh.
+          </p>
+
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">🏢</div>
+              <div>
+                <h4>Tata Agency Distribution Depot</h4>
+                <p>Gambhirpur, Azamgarh,<br>Uttar Pradesh — 276302</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4>Agency Wholesale Desk</h4>
+                <p>
+                  <strong>Shivani Traders:</strong> <a href="tel:+919621577274" style="color:#64b5f6;text-decoration:none;">+91 9621577274</a><br>
+                  <strong>Shivani Enterprises:</strong> <a href="tel:+919696130383" style="color:#64b5f6;text-decoration:none;">+91 9696130383</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>Email Inquiries</h4>
+                <p><a href="mailto:shivanitraiders@gmail.com" style="color:#64b5f6;text-decoration:none;">shivanitraiders@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal delay-2">
+          <h3>Tata Wholesale Inquiry</h3>
+          <p class="form-subtitle">Submit your requirements for immediate quotation and route supply.</p>
+
+          <form id="tataForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Business / Retailer Name *</label>
+                <input type="text" placeholder="e.g. Shivam Kirana Store" required>
+              </div>
+              <div class="form-group">
+                <label>Contact Name *</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>Market / Locality in Azamgarh *</label>
+                <input type="text" placeholder="Town / Mandi / Area" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Products Required (Cases / Bags / Cartons) *</label>
+              <textarea placeholder="e.g. 20 Bags Tata Salt 1kg, 10 Cartons Tata Tea Gold 500g, 5 Bags Sampann Toor Dal..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              Submit Wholesale Inquiry →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders">
+          <p>
+            Authorized Agency Partner for Tata Consumer Products and Tata Sampann in Azamgarh. 
+            Delivering trusted Indian staples with unmatched distribution efficiency.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Other Brand Agencies</h4>
+          <ul>
+            <li><a href="coca-cola.html">Coca-Cola Agency</a></li>
+            <li><a href="mother-dairy.html">Mother Dairy Agency</a></li>
+            <li><a href="tops.html">Tops Food Agency</a></li>
+            <li><a href="chings.html">Ching's Secret Agency</a></li>
+            <li><a href="organic-india.html">Organic India Agency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="index.html">Shivani Traders Home</a></li>
+            <li><a href="broadband.html">Shivani Broadband ISP</a></li>
+            <li><a href="index.html#export">Rice Export Division</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Agency Office</h4>
+          <p style="font-size:0.85rem;line-height:1.6;color:var(--gray-300);">
+            Gambhirpur, Azamgarh,<br>
+            Uttar Pradesh — 276302<br>
+            Traders: +91 9621577274<br>
+            Enterprises: +91 9696130383<br>
+            Email: shivanitraiders@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Shivani Traders — Tata Consumer Products Authorized Agency. All rights reserved. | Gambhirpur, Azamgarh, Uttar Pradesh (276302)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

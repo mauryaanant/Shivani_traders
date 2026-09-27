@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coca-Cola Authorized Agency | Shivani Traders — Wholesale & Retail Distribution</title>
+  <meta name="description" content="Shivani Traders is the authorized agency and wholesale distributor for Coca-Cola, Thums Up, Sprite, Fanta, Maaza, Limca, and Minute Maid across Azamgarh and Eastern Uttar Pradesh.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    .brand-hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(ellipse at 70% 30%, rgba(229, 9, 20, 0.2) 0%, transparent 60%),
+                  var(--navy-900);
+      padding: calc(var(--nav-height) + 50px) var(--space-xl) var(--space-4xl);
+      overflow: hidden;
+    }
+    .brand-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-3xl);
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+    .brand-image-frame {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(229, 9, 20, 0.25);
+    }
+    .brand-image-frame img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--transition-slow);
+    }
+    .brand-image-frame:hover img {
+      transform: scale(1.03);
+    }
+    .sku-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-xl);
+      margin-top: var(--space-3xl);
+    }
+    .sku-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .sku-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(229, 9, 20, 0.5);
+      box-shadow: 0 15px 35px rgba(229, 9, 20, 0.2);
+    }
+    .sku-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-md);
+    }
+    .sku-card h4 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: var(--space-xs);
+    }
+    .sku-card p {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .brand-hero-grid { grid-template-columns: 1fr; }
+      .brand-image-frame img { height: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders Logo">
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-name">Shivani Traders</span>
+          <span class="brand-tagline">Coca-Cola Authorized Agency</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">← Back to Home</a>
+        <a href="#portfolio" class="active">Product Range</a>
+        <a href="#distribution">Distribution Network</a>
+        <a href="broadband.html">Shivani Broadband</a>
+        <a href="#order" class="nav-cta">Place Bulk Order</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="brand-hero">
+    <div class="brand-hero-grid">
+      <div class="reveal">
+        <div class="hero-badge">
+          <span class="dot" style="background:#e50914;"></span>
+          <span style="color:#ff6b6b;">Authorized Coca-Cola Agency Partner</span>
+        </div>
+
+        <h1 class="hero-title" style="font-size:clamp(2.4rem, 5vw, 3.8rem);">
+          Coca-Cola Beverages<br>
+          <span style="background:linear-gradient(135deg, #ff4d4d, #e50914, #ff9800);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            Wholesale & Retail Supply
+          </span>
+        </h1>
+
+        <p class="hero-description" style="color:var(--gray-300);font-size:1.1rem;line-height:1.8;">
+          Shivani Traders manages the comprehensive beverage portfolio for The Coca-Cola Company. 
+          We guarantee 100% genuine depot-direct supply, uninterrupted stock, cold-chain transport, 
+          and wholesale crate margins for retailers, restaurants, hotels, and event organizers in Uttar Pradesh.
+        </p>
+
+        <div class="hero-actions" style="margin-top:var(--space-2xl);">
+          <a href="#order" class="btn-primary" style="background:linear-gradient(135deg, #e50914, #b71c1c);">
+            Request Wholesale Quotation
+            <i data-lucide="shopping-cart" style="width:20px;height:20px;"></i>
+          </a>
+          <a href="https://wa.me/919621577274?text=Hello%20Shivani%20Traders,%20I%20want%20to%20place%20a%20wholesale%20Coca-Cola%20order" target="_blank" class="btn-outline" style="border-color:#25d366;color:#25d366;">
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal delay-1">
+        <div class="brand-image-frame">
+          <img src="assets/images/brand-coca-cola.jpg" alt="Coca-Cola, Thums Up, Sprite, Maaza Products">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PORTFOLIO ====== -->
+  <section class="section-padding" id="portfolio" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Complete Beverage Portfolio</div>
+        <h2 class="section-title light">India's Favorite Beverages Under One Roof</h2>
+        <p class="section-subtitle light">
+          Available in 200ml Glass RGB, 250ml Slim Cans, 250ml/750ml PET, and 1.25L/2L family packs.
+        </p>
+      </div>
+
+      <div class="sku-grid">
+        <div class="sku-card reveal">
+          <div class="sku-icon">🥤</div>
+          <h4>Coca-Cola Classic</h4>
+          <p>Original taste & Zero Sugar variants across all pack sizes</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">⚡</div>
+          <h4>Thums Up</h4>
+          <p>Thunderous taste — top selling carbonated cola beverage</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🍋</div>
+          <h4>Sprite & Limca</h4>
+          <p>Crisp lemon-lime refreshment & fresh cloudy lemon</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🍊</div>
+          <h4>Fanta Orange</h4>
+          <p>Vibrant orange fruity carbonated beverage</p>
+        </div>
+        <div class="sku-card reveal">
+          <div class="sku-icon">🥭</div>
+          <h4>Maaza Mango</h4>
+          <p>Rich Alphonso mango pulp juice drink in PET & Tetra</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">💧</div>
+          <h4>Kinley Water & Soda</h4>
+          <p>Packaged drinking water with added minerals & sparkling soda</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🍎</div>
+          <h4>Minute Maid</h4>
+          <p>Pulpy Orange, Guava, Apple, and mixed fruit juice blends</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🔋</div>
+          <h4>Charged by Thums Up</h4>
+          <p>Berry caffeinated energy beverage for instant revitalization</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DISTRIBUTION ADVANTAGES ====== -->
+  <section class="section-padding" id="distribution" style="background:var(--navy-900);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Agency Advantages</div>
+        <h2 class="section-title light">Why Retailers Partner With Shivani Traders</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon" style="background:rgba(229, 9, 20, 0.15);color:#ff4d4d;">🚚</div>
+          <h3>Daily Route Delivery</h3>
+          <p>Scheduled dispatch fleets ensuring your coolers and display racks never run dry during peak seasons.</p>
+        </div>
+        <div class="service-card reveal delay-1">
+          <div class="service-icon" style="background:rgba(243, 156, 18, 0.15);color:var(--gold-400);">❄️</div>
+          <h3>Cooler & Chiller Support</h3>
+          <p>Assistance in Visi-Cooler placements and branded point-of-sale branding for high-volume retail partners.</p>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-icon" style="background:rgba(0, 230, 118, 0.15);color:#00e676;">🏷️</div>
+          <h3>Best Wholesale Crate Margins</h3>
+          <p>Direct agency pricing, volume rebates, festival schemes, and transparent computerized billing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BULK ORDER FORM ====== -->
+  <section class="section-padding" id="order" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Direct Agency Booking</div>
+          <h2 class="section-title">Place Your<br><span style="color:#ff4d4d;">Wholesale Order</span></h2>
+          <p class="section-subtitle">
+            Supplying kirana shops, modern trade supermarkets, HoReCa, canteens, and marriage events across Azamgarh.
+          </p>
+
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4>Agency Depot & Godown</h4>
+                <p>Gambhirpur, Azamgarh,<br>Uttar Pradesh — 276302</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4>Agency Sales & Orders</h4>
+                <p>
+                  <strong>Shivani Traders:</strong> <a href="tel:+919621577274" style="color:#64b5f6;text-decoration:none;">+91 9621577274</a><br>
+                  <strong>Shivani Enterprises:</strong> <a href="tel:+919696130383" style="color:#64b5f6;text-decoration:none;">+91 9696130383</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>Email Orders</h4>
+                <p><a href="mailto:shivanitraiders@gmail.com" style="color:#64b5f6;text-decoration:none;">shivanitraiders@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal delay-2">
+          <h3>Coca-Cola Order Inquiry</h3>
+          <p class="form-subtitle">Fill in your requirements and our route executive will contact you.</p>
+
+          <form id="cocaColaForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Shop / Business Name *</label>
+                <input type="text" placeholder="e.g. Gupta General Store" required>
+              </div>
+              <div class="form-group">
+                <label>Contact Person *</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>Locality / Area *</label>
+                <input type="text" placeholder="Azamgarh town / Market area" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Products & Estimated Quantity (Crates/Cases) *</label>
+              <textarea placeholder="e.g. 50 Crates Thums Up 250ml, 30 Crates Sprite, 20 Cases Maaza PET..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn" style="background:linear-gradient(135deg, #e50914, #b71c1c);color:#fff;">
+              Send Wholesale Inquiry →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders">
+          <p>
+            Authorized Agency Partner for The Coca-Cola Company. Delivering genuine beverages 
+            and reliable distribution across Eastern Uttar Pradesh.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Other Brand Agencies</h4>
+          <ul>
+            <li><a href="mother-dairy.html">Mother Dairy Agency</a></li>
+            <li><a href="tata-consumer.html">Tata Consumer Agency</a></li>
+            <li><a href="tops.html">Tops Food Agency</a></li>
+            <li><a href="chings.html">Ching's Secret Agency</a></li>
+            <li><a href="organic-india.html">Organic India Agency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="index.html">Shivani Traders Home</a></li>
+            <li><a href="broadband.html">Shivani Broadband ISP</a></li>
+            <li><a href="index.html#export">Rice Export Division</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Agency Office</h4>
+          <p style="font-size:0.85rem;line-height:1.6;color:var(--gray-300);">
+            Gambhirpur, Azamgarh,<br>
+            Uttar Pradesh — 276302<br>
+            Traders: +91 9621577274<br>
+            Enterprises: +91 9696130383<br>
+            Email: shivanitraiders@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Shivani Traders — Coca-Cola Authorized Agency. All rights reserved. | Gambhirpur, Azamgarh, Uttar Pradesh (276302)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

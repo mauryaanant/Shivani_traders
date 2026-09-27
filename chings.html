@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ching's Secret Authorized Agency | Shivani Traders — Desi Chinese Distribution</title>
+  <meta name="description" content="Authorized agency distributor for Ching's Secret Schezwan Chutney, Hakka Noodles, Desi Chinese sauces, and instant soups across Azamgarh, Uttar Pradesh.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    .brand-hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(ellipse at 70% 30%, rgba(229, 57, 53, 0.22) 0%, transparent 60%),
+                  var(--navy-900);
+      padding: calc(var(--nav-height) + 50px) var(--space-xl) var(--space-4xl);
+      overflow: hidden;
+    }
+    .brand-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-3xl);
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+    .brand-image-frame {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(229, 57, 53, 0.25);
+    }
+    .brand-image-frame img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--transition-slow);
+    }
+    .brand-image-frame:hover img {
+      transform: scale(1.03);
+    }
+    .sku-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-xl);
+      margin-top: var(--space-3xl);
+    }
+    .sku-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .sku-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(229, 57, 53, 0.5);
+      box-shadow: 0 15px 35px rgba(229, 57, 53, 0.2);
+    }
+    .sku-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-md);
+    }
+    .sku-card h4 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: var(--space-xs);
+    }
+    .sku-card p {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .brand-hero-grid { grid-template-columns: 1fr; }
+      .brand-image-frame img { height: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders Logo">
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-name">Shivani Traders</span>
+          <span class="brand-tagline">Ching's Secret Authorized Agency</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">← Back to Home</a>
+        <a href="#chutney" class="active">Schezwan & Sauces</a>
+        <a href="#noodles">Hakka Noodles</a>
+        <a href="broadband.html">Shivani Broadband</a>
+        <a href="#order" class="nav-cta">Wholesale Order</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="brand-hero">
+    <div class="brand-hero-grid">
+      <div class="reveal">
+        <div class="hero-badge">
+          <span class="dot" style="background:#e53935;"></span>
+          <span style="color:#ef5350;">Authorized Ching's Secret Agency Partner</span>
+        </div>
+
+        <h1 class="hero-title" style="font-size:clamp(2.4rem, 5vw, 3.8rem);">
+          Ching's Secret<br>
+          <span style="background:linear-gradient(135deg, #ff5252, #e53935, #ff9800);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            Desi Chinese Wholesale
+          </span>
+        </h1>
+
+        <p class="hero-description" style="color:var(--gray-300);font-size:1.1rem;line-height:1.8;">
+          Capitalize on India's #1 Desi Chinese craving with Shivani Traders. 
+          We distribute the complete authentic Ching's Secret range — including the bestselling 
+          Schezwan Chutney, Just Soak Hakka Noodles, Cook-up Soups, Chinese Masalas, and premium culinary sauces 
+          across retail, restaurant, and street-food supply channels in Azamgarh.
+        </p>
+
+        <div class="hero-actions" style="margin-top:var(--space-2xl);">
+          <a href="#order" class="btn-primary" style="background:linear-gradient(135deg, #e53935, #b71c1c);">
+            Request Wholesale Carton Rates
+            <i data-lucide="package" style="width:20px;height:20px;"></i>
+          </a>
+          <a href="https://wa.me/919621577274?text=Hello%20Shivani%20Traders,%20I%20want%20to%20order%20Chings%20Secret%20products" target="_blank" class="btn-outline" style="border-color:#25d366;color:#25d366;">
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal delay-1">
+        <div class="brand-image-frame">
+          <img src="assets/images/brand-chings.jpg" alt="Ching's Secret Schezwan Chutney, Hakka Noodles, Soy Sauce">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PORTFOLIO ====== -->
+  <section class="section-padding" id="chutney" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Fastest Moving Desi Chinese Products</div>
+        <h2 class="section-title light">The Complete Ching's Secret Catalogue</h2>
+        <p class="section-subtitle light">
+          High rotation shelf products trusted by homemakers, street stalls, and modern restaurants.
+        </p>
+      </div>
+
+      <div class="sku-grid">
+        <div class="sku-card reveal">
+          <div class="sku-icon">🌶️</div>
+          <h4>Schezwan Chutney</h4>
+          <p>Iconic 250g glass jars, 600g bottles, and ₹10 convenience pouches</p>
+        </div>
+        <div class="sku-card reveal delay-1" id="noodles">
+          <div class="sku-icon">🍜</div>
+          <h4>Just Soak Hakka Noodles</h4>
+          <p>No boiling needed — non-sticky restaurant-style noodles in 150g & 600g</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🥢</div>
+          <h4>Dark Soy Sauce</h4>
+          <p>Rich caramel umami sauce for fried rice, noodles, and stir-fries</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🔥</div>
+          <h4>Red & Green Chilli Sauce</h4>
+          <p>Zesty, pungent dipping and cooking sauces in glass bottles & pouches</p>
+        </div>
+        <div class="sku-card reveal">
+          <div class="sku-icon">🍲</div>
+          <h4>Ching's Desi Chinese Masala</h4>
+          <p>Paneer Chilli, Veg Fried Rice, Schezwan Fried Rice & Chowmein single-use sachets</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">🥣</div>
+          <h4>Instant Chinese Soups</h4>
+          <p>Hot & Sour, Manchow with crispy noodles, Sweet Corn, and Tomato soup</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🥡</div>
+          <h4>Foodservice / Bulk Packs</h4>
+          <p>5kg Schezwan Chutney buckets and 5-litre sauce cans for commercial kitchens</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🌶️</div>
+          <h4>Schezwan Fried Rice Mix</h4>
+          <p>Authentic spicy garlic and Sichuan pepper rice seasoning blend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ORDER FORM ====== -->
+  <section class="section-padding" id="order" style="background:var(--navy-900);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Agency Supply</div>
+          <h2 class="section-title">Order Ching's Secret<br><span style="color:#ef5350;">Direct From Depot</span></h2>
+          <p class="section-subtitle">
+            Reliable wholesale crate delivery to retail stores, supermarkets, fast-food outlets, and caterers in Azamgarh.
+          </p>
+
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4>Agency Depot Address</h4>
+                <p>Gambhirpur, Azamgarh,<br>Uttar Pradesh — 276302</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4>Ching's Agency Desk</h4>
+                <p>
+                  <strong>Shivani Traders:</strong> <a href="tel:+919621577274" style="color:#64b5f6;text-decoration:none;">+91 9621577274</a><br>
+                  <strong>Shivani Enterprises:</strong> <a href="tel:+919696130383" style="color:#64b5f6;text-decoration:none;">+91 9696130383</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>Email Inquiries</h4>
+                <p><a href="mailto:shivanitraiders@gmail.com" style="color:#64b5f6;text-decoration:none;">shivanitraiders@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal delay-2">
+          <h3>Ching's Secret Wholesale Order</h3>
+          <p class="form-subtitle">Special wholesale carton rates with prompt localized fulfillment.</p>
+
+          <form id="chingsForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Outlet / Store Name *</label>
+                <input type="text" placeholder="e.g. Desi Wok / City Kirana" required>
+              </div>
+              <div class="form-group">
+                <label>Contact Person *</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>Area in Azamgarh *</label>
+                <input type="text" placeholder="Market or town locality" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Products & Cartons Needed *</label>
+              <textarea placeholder="e.g. 10 Cartons Schezwan Chutney 250g, 15 Cartons Hakka Noodles, 5 Cases Soy Sauce..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn" style="background:linear-gradient(135deg, #e53935, #b71c1c);color:#fff;">
+              Submit Wholesale Order →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders">
+          <p>
+            Authorized Agency Partner for Ching's Secret (Capital Foods). Powering the Desi Chinese 
+            revolution with guaranteed product availability across Eastern Uttar Pradesh.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Other Brand Agencies</h4>
+          <ul>
+            <li><a href="coca-cola.html">Coca-Cola Agency</a></li>
+            <li><a href="mother-dairy.html">Mother Dairy Agency</a></li>
+            <li><a href="tata-consumer.html">Tata Consumer Agency</a></li>
+            <li><a href="tops.html">Tops Food Agency</a></li>
+            <li><a href="organic-india.html">Organic India Agency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="index.html">Shivani Traders Home</a></li>
+            <li><a href="broadband.html">Shivani Broadband ISP</a></li>
+            <li><a href="index.html#export">Rice Export Division</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Agency Office</h4>
+          <p style="font-size:0.85rem;line-height:1.6;color:var(--gray-300);">
+            Gambhirpur, Azamgarh,<br>
+            Uttar Pradesh — 276302<br>
+            Traders: +91 9621577274<br>
+            Enterprises: +91 9696130383<br>
+            Email: shivanitraiders@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Shivani Traders — Ching's Secret Authorized Agency. All rights reserved. | Gambhirpur, Azamgarh, Uttar Pradesh (276302)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

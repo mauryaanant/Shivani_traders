@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivani Broadband | High-Speed Fiber Internet & ISP — Azamgarh, UP</title>
+  <meta name="description"
+    content="Shivani Broadband is Azamgarh's licensed high-speed optical fiber internet provider. Unlimited FTTH broadband, leased lines, and 24/7 local support in Gambhirpur & Azamgarh, Uttar Pradesh (276302).">
+  <meta name="keywords"
+    content="Shivani Broadband, Azamgarh ISP, Fiber Internet Azamgarh, FTTH Gambhirpur, High speed internet Uttar Pradesh, Leased line Azamgarh">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    /* Broadband Dedicated Styles */
+    .page-hero {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(ellipse at 80% 20%, rgba(33, 150, 243, 0.22) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 80%, rgba(0, 230, 118, 0.12) 0%, transparent 50%),
+        var(--navy-900);
+      padding: calc(var(--nav-height) + 60px) var(--space-xl) var(--space-4xl);
+      overflow: hidden;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(33, 150, 243, 0.12) 1.5px, transparent 1.5px),
+        radial-gradient(rgba(243, 156, 18, 0.05) 1.5px, transparent 1.5px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+      pointer-events: none;
+    }
+
+    .broadband-hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: var(--space-4xl);
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .speed-test-widget {
+      background: rgba(10, 22, 40, 0.75);
+      border: 1px solid rgba(33, 150, 243, 0.35);
+      border-radius: var(--radius-xl);
+      padding: var(--space-2xl);
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(33, 150, 243, 0.1);
+      backdrop-filter: blur(16px);
+      position: relative;
+    }
+
+    .speed-dial {
+      width: 220px;
+      height: 220px;
+      margin: 0 auto var(--space-xl);
+      border-radius: 50%;
+      border: 6px solid rgba(33, 150, 243, 0.2);
+      border-top-color: #2196f3;
+      border-right-color: #00e676;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: dialGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes dialGlow {
+      0% {
+        box-shadow: 0 0 20px rgba(33, 150, 243, 0.3);
+      }
+
+      100% {
+        box-shadow: 0 0 45px rgba(0, 230, 118, 0.5);
+      }
+    }
+
+    .speed-dial-number {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .speed-dial-unit {
+      font-size: 0.9rem;
+      color: #64b5f6;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .speed-stats-bar {
+      display: flex;
+      justify-content: space-around;
+      padding-top: var(--space-lg);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .speed-stat-item h6 {
+      font-size: 0.75rem;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+    }
+
+    .speed-stat-item p {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #00e676;
+      margin: 0;
+    }
+
+    .plans-tabs {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-3xl);
+    }
+
+    .plan-tab-btn {
+      padding: 12px 28px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--gray-300);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-base);
+    }
+
+    .plan-tab-btn.active {
+      background: #2196f3;
+      border-color: #2196f3;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(33, 150, 243, 0.4);
+    }
+
+    .plans-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-xl);
+    }
+
+    @media (max-width: 1024px) {
+      .broadband-hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .plans-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .plans-grid-4 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .coverage-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--space-2xl);
+    }
+
+    .coverage-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: var(--space-lg);
+    }
+
+    .coverage-pill {
+      background: rgba(33, 150, 243, 0.1);
+      border: 1px solid rgba(33, 150, 243, 0.25);
+      color: #64b5f6;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .coverage-pill.hub {
+      background: rgba(243, 156, 18, 0.15);
+      border-color: rgba(243, 156, 18, 0.4);
+      color: var(--gold-400);
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders Logo">
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-name">Shivani Traders</span>
+          <span class="brand-tagline">Broadband & Telecom ISP</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">← Back to Home</a>
+        <a href="#plans" class="active">Fiber Plans</a>
+        <a href="#features">Features</a>
+        <a href="#coverage">Azamgarh Coverage</a>
+        <a href="#book" class="nav-cta">Book Connection</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="page-hero">
+    <div class="broadband-hero-grid">
+      <div class="reveal">
+        <div class="hero-badge">
+          <span class="dot" style="background:#00e676;"></span>
+          <span style="color:#64b5f6;">⚡ Official ISP Division — Azamgarh, Uttar Pradesh</span>
+        </div>
+
+        <h1 class="hero-title" style="font-size:clamp(2.4rem, 5vw, 3.8rem);">
+          Shivani Broadband<br>
+          <span class="highlight-blue">Gigabit Optical Fiber</span>
+        </h1>
+
+        <p class="hero-description" style="color:var(--gray-300);font-size:1.1rem;line-height:1.8;">
+          Azamgarh’s trusted licensed Internet Service Provider delivering pure Fiber-to-the-Home (FTTH)
+          and dedicated corporate leased lines. Symmetrical speeds up to 1 Gbps, 99.9% uptime SLA,
+          and 24/7 on-ground engineering support based right here in Gambhirpur, Azamgarh (276302).
+        </p>
+
+        <div class="hero-actions" style="margin-top:var(--space-2xl);">
+          <a href="#plans" class="btn-primary" style="background:linear-gradient(135deg, #2196f3, #00b0ff);">
+            View Fiber Plans
+            <i data-lucide="arrow-down" style="width:20px;height:20px;"></i>
+          </a>
+          <a href="#book" class="btn-outline">
+            <i data-lucide="wifi" style="width:20px;height:20px;"></i>
+            Book Connection
+          </a>
+          <a href="https://wa.me/919621007274?text=Hello%20Shivani%20Broadband,%20I%20want%20to%20inquire%20about%20a%20new%20fiber%20connection"
+            target="_blank" class="btn-outline" style="border-color:#25d366;color:#25d366;">
+            WhatsApp ISP Desk
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal delay-1">
+        <div class="speed-test-widget">
+          <img src="assets/images/broadband-clean.png" alt="Shivani Broadband"
+            style="width:85px;margin-bottom:var(--space-md);filter:drop-shadow(0 0 15px rgba(33,150,243,0.5));">
+          <div class="speed-dial">
+            <div class="speed-dial-number">300</div>
+            <div class="speed-dial-unit">Mbps Fiber</div>
+          </div>
+          <div class="speed-stats-bar">
+            <div class="speed-stat-item">
+              <h6>Latency (Ping)</h6>
+              <p>4 ms</p>
+            </div>
+            <div class="speed-stat-item">
+              <h6>Download</h6>
+              <p>300 Mbps</p>
+            </div>
+            <div class="speed-stat-item">
+              <h6>Upload</h6>
+              <p>300 Mbps</p>
+            </div>
+            <div class="speed-stat-item">
+              <h6>Uptime</h6>
+              <p>99.9%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES SECTION ====== -->
+  <section class="section-padding" id="features" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Why Choose Shivani Broadband</div>
+        <h2 class="section-title light">Engineered For Ultra High-Performance</h2>
+        <p class="section-subtitle light">
+          Built on a modern ring-topology fiber optic network ensuring uninterrupted connectivity,
+          lightning downloads, and crystal-clear video streaming.
+        </p>
+      </div>
+
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="service-card reveal">
+          <div class="service-icon" style="background:rgba(33, 150, 243, 0.15);color:#2196f3;">⚡</div>
+          <h3>Pure Optical FTTH</h3>
+          <p>Fiber optic wire directly to your router inside your premises. Zero copper degradation, zero signal loss in
+            rain or weather.</p>
+          <div class="service-tags"><span class="service-tag">100% Fiber</span><span class="service-tag">Weather
+              Proof</span></div>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-icon" style="background:rgba(0, 230, 118, 0.15);color:#00e676;">♾️</div>
+          <h3>Truly Unlimited Data</h3>
+          <p>No hidden FUP or daily speed throttling. Enjoy binge streaming, gaming, cloud backups, and Zoom calls
+            without bandwidth caps.</p>
+          <div class="service-tags"><span class="service-tag">No Speed Cap</span><span class="service-tag">No Daily
+              Limit</span></div>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-icon" style="background:rgba(243, 156, 18, 0.15);color:var(--gold-400);">🎮</div>
+          <h3>Symmetrical 1:1 Speed</h3>
+          <p>Equal upload and download speeds. Upload heavy video files, live-stream to YouTube, or host servers with
+            ultra-low ping.</p>
+          <div class="service-tags"><span class="service-tag">1:1 Symmetrical</span><span class="service-tag">Low
+              Ping</span></div>
+        </div>
+
+        <div class="service-card reveal delay-3">
+          <div class="service-icon" style="background:rgba(156, 39, 176, 0.15);color:#ab47bc;">🛠️</div>
+          <h3>Local 24/7 Azamgarh Support</h3>
+          <p>Direct access to our dedicated field engineers in Gambhirpur and Azamgarh. Swift on-site resolution within
+            2 hours of reporting.</p>
+          <div class="service-tags"><span class="service-tag">On-Site Techs</span><span class="service-tag">2-Hr
+              Response</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PLANS SECTION ====== -->
+  <section class="section-padding" id="plans" style="background:var(--navy-900);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Transparent Pricing</div>
+        <h2 class="section-title light">Fiber Plans Tailored For You</h2>
+        <p class="section-subtitle light">
+          Affordable, blazing-fast plans for homes, students, professionals, and enterprise offices.
+        </p>
+      </div>
+
+      <div class="plans-grid-4">
+        <!-- Plan 1 -->
+        <div class="broadband-plan-card reveal">
+          <div class="broadband-plan-header">
+            <div class="broadband-plan-name">
+              <h4>Fiber Starter</h4>
+              <span>Ideal for everyday browsing & studies</span>
+            </div>
+            <div class="broadband-speed-badge">
+              <div class="broadband-speed-num">40</div>
+              <div class="broadband-speed-unit">Mbps</div>
+            </div>
+          </div>
+          <div class="broadband-plan-features">
+            <div class="broadband-plan-feature"><span class="check">✓</span> Unlimited High-Speed Data</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Free Wi-Fi ONT Router</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> 4K YouTube & FHD Video</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> 24/7 Helpline Support</div>
+          </div>
+          <div class="broadband-plan-footer">
+            <div>
+              <span style="font-size:1.4rem;font-weight:800;color:var(--white);">₹399</span>
+              <span style="font-size:0.8rem;color:var(--gray-400);">/ month</span>
+            </div>
+            <a href="#book" class="btn-plan">Select Plan</a>
+          </div>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="broadband-plan-card featured reveal delay-1">
+          <div class="broadband-plan-ribbon">Best Seller</div>
+          <div class="broadband-plan-header">
+            <div class="broadband-plan-name">
+              <h4>Turbo Stream</h4>
+              <span>Perfect for families & 4K OTT screens</span>
+            </div>
+            <div class="broadband-speed-badge">
+              <div class="broadband-speed-num" style="color:#00e676;">100</div>
+              <div class="broadband-speed-unit">Mbps</div>
+            </div>
+          </div>
+          <div class="broadband-plan-features">
+            <div class="broadband-plan-feature"><span class="check">✓</span> Truly Unlimited Data</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Dual-Band Gigabit Router</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Symmetrical 1:1 Upload/Download</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Free Installation on 6 Months</div>
+          </div>
+          <div class="broadband-plan-footer">
+            <div>
+              <span style="font-size:1.4rem;font-weight:800;color:#00e676;">₹599</span>
+              <span style="font-size:0.8rem;color:var(--gray-400);">/ month</span>
+            </div>
+            <a href="#book" class="btn-plan" style="background:#2196f3;border-color:#2196f3;">Select Plan</a>
+          </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="broadband-plan-card reveal delay-2">
+          <div class="broadband-plan-header">
+            <div class="broadband-plan-name">
+              <h4>Gamer & Work Pro</h4>
+              <span>Heavy work-from-home & competitive gaming</span>
+            </div>
+            <div class="broadband-speed-badge">
+              <div class="broadband-speed-num" style="color:#64b5f6;">200</div>
+              <div class="broadband-speed-unit">Mbps</div>
+            </div>
+          </div>
+          <div class="broadband-plan-features">
+            <div class="broadband-plan-feature"><span class="check">✓</span> Ultra-Low Gaming Latency</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Premium Dual-Band Wi-Fi 6 Device</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Simultaneous 15+ Devices</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Priority Technician Dispatch</div>
+          </div>
+          <div class="broadband-plan-footer">
+            <div>
+              <span style="font-size:1.4rem;font-weight:800;color:var(--white);">₹799</span>
+              <span style="font-size:0.8rem;color:var(--gray-400);">/ month</span>
+            </div>
+            <a href="#book" class="btn-plan">Select Plan</a>
+          </div>
+        </div>
+
+        <!-- Plan 4 -->
+        <div class="broadband-plan-card reveal delay-3">
+          <div class="broadband-plan-header">
+            <div class="broadband-plan-name">
+              <h4>Enterprise Leased Line</h4>
+              <span>Dedicated corporate bandwidth with Static IP</span>
+            </div>
+            <div class="broadband-speed-badge">
+              <div class="broadband-speed-num" style="color:var(--gold-400);">300+</div>
+              <div class="broadband-speed-unit">Mbps</div>
+            </div>
+          </div>
+          <div class="broadband-plan-features">
+            <div class="broadband-plan-feature"><span class="check">✓</span> 100% Dedicated 1:1 Bandwidth</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Fixed Static IP Pool</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> 99.9% Strict SLA Guarantee</div>
+            <div class="broadband-plan-feature"><span class="check">✓</span> Dedicated Account Manager</div>
+          </div>
+          <div class="broadband-plan-footer">
+            <div>
+              <span style="font-size:1.4rem;font-weight:800;color:var(--gold-400);">Custom</span>
+              <span style="font-size:0.8rem;color:var(--gray-400);">SLA Quote</span>
+            </div>
+            <a href="#book" class="btn-plan">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== COVERAGE & NOC HUB ====== -->
+  <section class="section-padding" id="coverage" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Service Area</div>
+        <h2 class="section-title light">Serving in whole Azamgarh District</h2>
+        <p class="section-subtitle light">
+          Our fiber backhaul continues to expand across urban and rural sectors of Azamgarh.
+        </p>
+      </div>
+
+      <div class="broadband-grid">
+        <div class="coverage-card reveal">
+          <h3
+            style="color:var(--white);font-size:1.4rem;margin-bottom:var(--space-md);display:flex;align-items:center;gap:10px;">
+            <i data-lucide="map-pin" style="color:#2196f3;"></i>
+            Active Coverage Localities
+          </h3>
+          <p style="color:var(--gray-300);font-size:0.95rem;">
+            Fiber connectivity is live and ready for instant installation in the following areas:
+          </p>
+          <div class="coverage-tag-list">
+            <span class="coverage-pill hub">★ Gambhirpur (Central Hub)</span>
+            <span class="coverage-pill">Thekma</span>
+            <span class="coverage-pill">Mohhamadpur</span>
+            <span class="coverage-pill">Bindra Bazar</span>
+            <span class="coverage-pill">Azamgarh City Hub</span>
+            <span class="coverage-pill">Station Road</span>
+            <span class="coverage-pill">Saraimeer</span>
+            <span class="coverage-pill">Bilariyaganj Road</span>
+            <span class="coverage-pill">Mubarakpur Link</span>
+            <span class="coverage-pill">Lalganj Sector</span>
+            <span class="coverage-pill">Phoolpur Market</span>
+          </div>
+        </div>
+
+        <div class="coverage-card reveal delay-1"
+          style="background:rgba(10, 22, 40, 0.7);border-color:rgba(243, 156, 18, 0.3);">
+          <h3
+            style="color:var(--gold-400);font-size:1.4rem;margin-bottom:var(--space-md);display:flex;align-items:center;gap:10px;">
+            <i data-lucide="radio" style="color:var(--gold-400);"></i>
+            Network Operations Center (NOC)
+          </h3>
+          <p style="color:var(--gray-300);font-size:0.95rem;line-height:1.7;">
+            <strong>Headquarters:</strong> Gambhirpur, Azamgarh - 276302, Uttar Pradesh.<br><br>
+            Our Network Operations Center monitors latency, packet delivery, and uptime 24 hours a day, 7 days a week to
+            ensure zero downtime for your home or enterprise.
+          </p>
+          <div style="margin-top:var(--space-xl);display:flex;gap:var(--space-md);flex-wrap:wrap;">
+            <a href="tel:+919621007274" class="btn-primary"
+              style="background:linear-gradient(135deg, #2196f3, #00b0ff);font-size:0.9rem;padding:10px 20px;">
+              Call NOC Desk: +91 9621007274
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BOOKING FORM ====== -->
+  <section class="section-padding" id="book" style="background:var(--navy-900);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Quick Installation</div>
+          <h2 class="section-title">Get Connected in<br><span class="highlight-blue">24 Hours</span></h2>
+          <p class="section-subtitle">
+            Fill in your address in Azamgarh, and our technician team will survey your building and activate your
+            high-speed fiber connection immediately.
+          </p>
+
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">⚡</div>
+              <div>
+                <h4>Same-Day Feasibility Survey</h4>
+                <p>Free optical power verification at your doorstep</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4>Broadband Helpline</h4>
+                <p>
+                  <strong>NOC Support:</strong> <a href="tel:+919621007274" style="color:#00e676;text-decoration:none;">+91 9621007274</a><br>
+                  <strong>Enterprises:</strong> <a href="tel:+919696130383" style="color:#64b5f6;text-decoration:none;">+91 9696130383</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>ISP Inquiries</h4>
+                <p><a href="mailto:sbgambhirpur@gmail.com" style="color:#00e676;text-decoration:none;">sbgambhirpur@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal delay-2">
+          <h3>Request New Fiber Connection</h3>
+          <p class="form-subtitle">Special promotional discount on 6-month & 12-month bookings.</p>
+
+          <form id="broadbandForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bbName">Full Name *</label>
+                <input type="text" id="bbName" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="bbPhone">Phone Number *</label>
+                <input type="tel" id="bbPhone" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bbLocality">Area / Locality in Azamgarh *</label>
+                <input type="text" id="bbLocality" placeholder="e.g. Gambhirpur, Thekma, Bindra Bazar, Station Rd" required>
+              </div>
+              <div class="form-group">
+                <label for="bbPlan">Select Plan *</label>
+                <select id="bbPlan" required>
+                  <option value="starter">Fiber Starter (40 Mbps - ₹399/mo)</option>
+                  <option value="turbo" selected>Turbo Stream (100 Mbps - ₹599/mo)</option>
+                  <option value="pro">Gamer & Work Pro (200 Mbps - ₹799/mo)</option>
+                  <option value="leased">Enterprise Leased Line (300+ Mbps)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bbAddress">Complete Address / Landmark *</label>
+              <textarea id="bbAddress" placeholder="House/Shop No., Street, Landmark in Azamgarh..." rows="3"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submitBtn"
+              style="background:linear-gradient(135deg, #2196f3, #00b0ff);color:#fff;">
+              Submit Connection Request →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders">
+          <p>
+            Shivani Broadband is the dedicated high-speed optical fiber network of Shivani Traders,
+            serving residential, institutional, and commercial consumers across Azamgarh, UP.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Facebook">📘</a>
+            <a href="#" class="footer-social" aria-label="Instagram">📷</a>
+            <a href="#" class="footer-social" aria-label="LinkedIn">💼</a>
+            <a href="#" class="footer-social" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Broadband Links</h4>
+          <ul>
+            <li><a href="index.html">Shivani Traders Home</a></li>
+            <li><a href="#plans">Fiber Plans</a></li>
+            <li><a href="#features">FTTH Features</a></li>
+            <li><a href="#coverage">Coverage Map</a></li>
+            <li><a href="#book">Book Connection</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>FMCG Brand Agencies</h4>
+          <ul>
+            <li><a href="coca-cola.html">Coca-Cola Agency</a></li>
+            <li><a href="mother-dairy.html">Mother Dairy Agency</a></li>
+            <li><a href="tata-consumer.html">Tata Consumer & Sampann</a></li>
+            <li><a href="tops.html">Tops Food Agency</a></li>
+            <li><a href="chings.html">Ching's Secret</a></li>
+            <li><a href="organic-india.html">Organic India</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Operations HQ</h4>
+          <p style="font-size:0.85rem;line-height:1.6;color:var(--gray-300);">
+            Gambhirpur, Azamgarh - 276302,<br>
+            Uttar Pradesh, India<br>
+            Broadband NOC: +91 9621007274<br>
+            Enterprises: +91 9696130383<br>
+            Email: sbgambhirpur@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Shivani Broadband, Shivani Enterprises & Shivani Traders. All rights reserved. | Gambhirpur, Azamgarh, Uttar Pradesh (276302)</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

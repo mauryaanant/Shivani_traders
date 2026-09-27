@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tops Food Products Authorized Agency | Shivani Traders — Azamgarh</title>
+  <meta name="description" content="Authorized distribution agency for Tops tomato ketchup, mixed fruit jams, mango pickles, green chilli sauce, and synthetic vinegar in Azamgarh and Eastern Uttar Pradesh.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    .brand-hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(ellipse at 70% 30%, rgba(211, 47, 47, 0.22) 0%, transparent 60%),
+                  var(--navy-900);
+      padding: calc(var(--nav-height) + 50px) var(--space-xl) var(--space-4xl);
+      overflow: hidden;
+    }
+    .brand-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-3xl);
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+    .brand-image-frame {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(211, 47, 47, 0.25);
+    }
+    .brand-image-frame img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--transition-slow);
+    }
+    .brand-image-frame:hover img {
+      transform: scale(1.03);
+    }
+    .sku-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-xl);
+      margin-top: var(--space-3xl);
+    }
+    .sku-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .sku-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(211, 47, 47, 0.5);
+      box-shadow: 0 15px 35px rgba(211, 47, 47, 0.2);
+    }
+    .sku-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-md);
+    }
+    .sku-card h4 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: var(--space-xs);
+    }
+    .sku-card p {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .brand-hero-grid { grid-template-columns: 1fr; }
+      .brand-image-frame img { height: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders Logo">
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-name">Shivani Traders</span>
+          <span class="brand-tagline">Tops Authorized Agency</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">← Back to Home</a>
+        <a href="#portfolio" class="active">Condiments & Jams</a>
+        <a href="#pickles">Tops Pickles</a>
+        <a href="broadband.html">Shivani Broadband</a>
+        <a href="#order" class="nav-cta">Bulk Order</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="brand-hero">
+    <div class="brand-hero-grid">
+      <div class="reveal">
+        <div class="hero-badge">
+          <span class="dot" style="background:#d32f2f;"></span>
+          <span style="color:#ef5350;">Authorized Tops Agency Partner</span>
+        </div>
+
+        <h1 class="hero-title" style="font-size:clamp(2.4rem, 5vw, 3.8rem);">
+          Tops Quality Condiments<br>
+          <span style="background:linear-gradient(135deg, #ef5350, #d32f2f, #f39c12);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            Pickles, Ketchup & Jams
+          </span>
+        </h1>
+
+        <p class="hero-description" style="color:var(--gray-300);font-size:1.1rem;line-height:1.8;">
+          Shivani Traders distributes the full culinary collection of Tops food products. 
+          Renowned for authentic Indian flavors, delicious fruit jams, zesty culinary sauces, 
+          traditional handmade-style pickles, and pure synthetic vinegar for retail and HoReCa across Azamgarh.
+        </p>
+
+        <div class="hero-actions" style="margin-top:var(--space-2xl);">
+          <a href="#order" class="btn-primary" style="background:linear-gradient(135deg, #d32f2f, #b71c1c);">
+            Request Tops Wholesale Pricing
+            <i data-lucide="shopping-bag" style="width:20px;height:20px;"></i>
+          </a>
+          <a href="https://wa.me/919621577274?text=Hello%20Shivani%20Traders,%20I%20want%20to%20order%20Tops%20products" target="_blank" class="btn-outline" style="border-color:#25d366;color:#25d366;">
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal delay-1">
+        <div class="brand-image-frame">
+          <img src="assets/images/brand-tops.jpg" alt="Tops Tomato Ketchup, Mixed Fruit Jam, Pickles, Vinegar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PORTFOLIO ====== -->
+  <section class="section-padding" id="portfolio" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Complete Product Range</div>
+        <h2 class="section-title light">Tops Flagship Pantry Products</h2>
+        <p class="section-subtitle light">
+          Available in retail glass bottles, convenient squeezy packs, and bulk institutional catering sizes.
+        </p>
+      </div>
+
+      <div class="sku-grid">
+        <div class="sku-card reveal">
+          <div class="sku-icon">🍅</div>
+          <h4>Tops Tomato Ketchup</h4>
+          <p>Rich, thick, delicious tomato ketchup in glass bottles, pouches & squeezy packs</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">🍓</div>
+          <h4>Tops Mixed Fruit Jam</h4>
+          <p>Glossy real fruit jam spread packed with real mixed fruit pulp</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🥭</div>
+          <h4>Tops Royal Pickles (Achar)</h4>
+          <p>Mango, Mixed, Lime, Green Chilli, and Stuffed Red Chilli traditional pickles</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🌶️</div>
+          <h4>Tops Culinary Sauces</h4>
+          <p>Green Chilli Sauce, Red Chilli Sauce, Soy Sauce, and Continental Tomato Sauce</p>
+        </div>
+        <div class="sku-card reveal">
+          <div class="sku-icon">🍶</div>
+          <h4>Tops Synthetic White Vinegar</h4>
+          <p>Essential cooking and pickling vinegar in 500ml and 5-litre food service cans</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">🍮</div>
+          <h4>Custard Powder & Jelly</h4>
+          <p>Vanilla, Strawberry custard mixes and quick-setting dessert crystal jellies</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🍜</div>
+          <h4>Tops Instant Noodles</h4>
+          <p>Flavorsome masala and veggie instant noodles for snacking</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🍹</div>
+          <h4>Fruit Crushes & Syrups</h4>
+          <p>Rose syrup, Pineapple, and Orange mocktail concentrates for beverage counters</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BULK ORDER FORM ====== -->
+  <section class="section-padding" id="order" style="background:var(--navy-900);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Wholesale Supply</div>
+          <h2 class="section-title">Order Tops Products<br><span style="color:#ef5350;">Direct From Agency</span></h2>
+          <p class="section-subtitle">
+            Supplying grocery merchants, fast food outlets, restaurants, sweet shops, and wedding caterers across Azamgarh.
+          </p>
+
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4>Agency Depot Location</h4>
+                <p>Gambhirpur, Azamgarh,<br>Uttar Pradesh — 276302</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4>Tops Distribution Desk</h4>
+                <p>
+                  <strong>Shivani Traders:</strong> <a href="tel:+919621577274" style="color:#64b5f6;text-decoration:none;">+91 9621577274</a><br>
+                  <strong>Shivani Enterprises:</strong> <a href="tel:+919696130383" style="color:#64b5f6;text-decoration:none;">+91 9696130383</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>Email Inquiries</h4>
+                <p><a href="mailto:shivanitraiders@gmail.com" style="color:#64b5f6;text-decoration:none;">shivanitraiders@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal delay-2">
+          <h3>Tops Wholesale Order Inquiry</h3>
+          <p class="form-subtitle">Receive current agency price lists and festival scheme details.</p>
+
+          <form id="topsForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Shop / Outlet Name *</label>
+                <input type="text" placeholder="e.g. Modern Mart Azamgarh" required>
+              </div>
+              <div class="form-group">
+                <label>Contact Name *</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>Town / Market *</label>
+                <input type="text" placeholder="Locality in Azamgarh" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Products Required (Cartons / Pet Jars) *</label>
+              <textarea placeholder="e.g. 15 Cartons Tops Ketchup 500g, 10 Cartons Mango Pickle 1kg, 5 Cases Mixed Jam..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn" style="background:linear-gradient(135deg, #d32f2f, #b71c1c);color:#fff;">
+              Send Tops Order Inquiry →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders">
+          <p>
+            Authorized Tops Food Agency Partner for Azamgarh. Bringing India’s most cherished 
+            pickles, ketchups, sauces, and dessert delights to retail counters.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Other Brand Agencies</h4>
+          <ul>
+            <li><a href="coca-cola.html">Coca-Cola Agency</a></li>
+            <li><a href="mother-dairy.html">Mother Dairy Agency</a></li>
+            <li><a href="tata-consumer.html">Tata Consumer Agency</a></li>
+            <li><a href="chings.html">Ching's Secret Agency</a></li>
+            <li><a href="organic-india.html">Organic India Agency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="index.html">Shivani Traders Home</a></li>
+            <li><a href="broadband.html">Shivani Broadband ISP</a></li>
+            <li><a href="index.html#export">Rice Export Division</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Agency Office</h4>
+          <p style="font-size:0.85rem;line-height:1.6;color:var(--gray-300);">
+            Gambhirpur, Azamgarh,<br>
+            Uttar Pradesh — 276302<br>
+            Traders: +91 9621577274<br>
+            Enterprises: +91 9696130383<br>
+            Email: shivanitraiders@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Shivani Traders — Tops Authorized Agency. All rights reserved. | Gambhirpur, Azamgarh, Uttar Pradesh (276302)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

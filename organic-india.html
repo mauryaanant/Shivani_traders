@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic India Authorized Agency | Shivani Traders — True Wellness Distribution</title>
+  <meta name="description" content="Authorized distribution agency for Organic India Tulsi Green Tea, organic cow ghee, Triphala, Ashwagandha, and certified herbal wellness products in Azamgarh, Uttar Pradesh.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    .brand-hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(ellipse at 70% 30%, rgba(46, 125, 50, 0.25) 0%, transparent 60%),
+                  var(--navy-900);
+      padding: calc(var(--nav-height) + 50px) var(--space-xl) var(--space-4xl);
+      overflow: hidden;
+    }
+    .brand-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-3xl);
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+    .brand-image-frame {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(46, 125, 50, 0.25);
+    }
+    .brand-image-frame img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--transition-slow);
+    }
+    .brand-image-frame:hover img {
+      transform: scale(1.03);
+    }
+    .sku-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-xl);
+      margin-top: var(--space-3xl);
+    }
+    .sku-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .sku-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(46, 125, 50, 0.6);
+      box-shadow: 0 15px 35px rgba(46, 125, 50, 0.25);
+    }
+    .sku-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-md);
+    }
+    .sku-card h4 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: var(--space-xs);
+    }
+    .sku-card p {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .brand-hero-grid { grid-template-columns: 1fr; }
+      .brand-image-frame img { height: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders Logo">
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-name">Shivani Traders</span>
+          <span class="brand-tagline">Organic India Authorized Agency</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">← Back to Home</a>
+        <a href="#teas" class="active">Tulsi Teas</a>
+        <a href="#supplements">Herbal Wellness</a>
+        <a href="broadband.html">Shivani Broadband</a>
+        <a href="#order" class="nav-cta">Wholesale Order</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="brand-hero">
+    <div class="brand-hero-grid">
+      <div class="reveal">
+        <div class="hero-badge">
+          <span class="dot" style="background:#2e7d32;"></span>
+          <span style="color:#81c784;">Authorized Organic India Agency Partner</span>
+        </div>
+
+        <h1 class="hero-title" style="font-size:clamp(2.4rem, 5vw, 3.8rem);">
+          Organic India<br>
+          <span style="background:linear-gradient(135deg, #81c784, #4caf50, #f39c12);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            Healthy Conscious Living
+          </span>
+        </h1>
+
+        <p class="hero-description" style="color:var(--gray-300);font-size:1.1rem;line-height:1.8;">
+          Shivani Traders is proud to distribute the certified organic wellness portfolio of Organic India. 
+          Bringing the finest wild-crafted Tulsi teas, authentic herbal supplements, organic cow ghee, 
+          and whole psyllium husk to pharmacies, specialty organic stores, Ayurvedic centers, and supermarkets in Azamgarh.
+        </p>
+
+        <div class="hero-actions" style="margin-top:var(--space-2xl);">
+          <a href="#order" class="btn-primary" style="background:linear-gradient(135deg, #2e7d32, #1b5e20);">
+            Wholesale Catalog & Pricing
+            <i data-lucide="leaf" style="width:20px;height:20px;"></i>
+          </a>
+          <a href="https://wa.me/919621577274?text=Hello%20Shivani%20Traders,%20I%20want%20to%20order%20Organic%20India%20products" target="_blank" class="btn-outline" style="border-color:#25d366;color:#25d366;">
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal delay-1">
+        <div class="brand-image-frame">
+          <img src="assets/images/brand-organic-india.jpg" alt="Organic India Tulsi Green Tea Ashwagandha">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PORTFOLIO ====== -->
+  <section class="section-padding" id="teas" style="background:var(--navy-800);">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label">Certified Organic Portfolio</div>
+        <h2 class="section-title light">Herbal Wellness & Organic Nutrition</h2>
+        <p class="section-subtitle light">
+          USDA Organic, Non-GMO Project Verified, and India Organic certified products.
+        </p>
+      </div>
+
+      <div class="sku-grid">
+        <div class="sku-card reveal">
+          <div class="sku-icon">🍵</div>
+          <h4>Tulsi Green Tea Ashwagandha</h4>
+          <p>Iconic stress-relieving herbal infusion in 25-bag boxes & loose leaf tins</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">🌿</div>
+          <h4>Tulsi Original & Mulethi</h4>
+          <p>Pure blend of Krishna, Rama, and Vana Tulsi for respiratory immunity</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">🌹</div>
+          <h4>Tulsi Sweet Rose & Honey Chamomile</h4>
+          <p>Calming herbal infusion with aromatic rose petals and organic chamomile</p>
+        </div>
+        <div class="sku-card reveal delay-3" id="supplements">
+          <div class="sku-icon">💊</div>
+          <h4>Organic Ashwagandha & Triphala</h4>
+          <p>Veg capsules supporting stamina, vitality, and digestive gut cleansing</p>
+        </div>
+        <div class="sku-card reveal">
+          <div class="sku-icon">🧈</div>
+          <h4>Organic A2 Cow Ghee</h4>
+          <p>Traditional bilona method cultured organic pure cow ghee in glass jars</p>
+        </div>
+        <div class="sku-card reveal delay-1">
+          <div class="sku-icon">🌾</div>
+          <h4>Whole Husk Psyllium (Isabgol)</h4>
+          <p>100% certified organic soluble dietary fiber for optimal digestive health</p>
+        </div>
+        <div class="sku-card reveal delay-2">
+          <div class="sku-icon">✨</div>
+          <h4>Moringa & Wheatgrass Powder</h4>
+          <p>Nutrient-dense organic superfood green powders for daily detox</p>
+        </div>
+        <div class="sku-card reveal delay-3">
+          <div class="sku-icon">🍯</div>
+          <h4>Multi-Floral Wild Forest Honey</h4>
+          <p>Raw, unprocessed certified organic honey harvested from Himalayan forests</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ORDER FORM ====== -->
+  <section class="section-padding" id="order" style="background:var(--navy-900);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Wholesale Supply</div>
+          <h2 class="section-title">Stock Organic India<br><span style="color:#81c784;">In Your Pharmacy & Store</span></h2>
+          <p class="section-subtitle">
+            Supplying leading retail pharmacies, wellness stores, Ayurvedic clinics, and high-end supermarkets in Azamgarh.
+          </p>
+
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4>Agency Depot Address</h4>
+                <p>Gambhirpur, Azamgarh,<br>Uttar Pradesh — 276302</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4>Organic India Agency Desk</h4>
+                <p>
+                  <strong>Shivani Traders:</strong> <a href="tel:+919621577274" style="color:#64b5f6;text-decoration:none;">+91 9621577274</a><br>
+                  <strong>Shivani Enterprises:</strong> <a href="tel:+919696130383" style="color:#64b5f6;text-decoration:none;">+91 9696130383</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>Email Inquiries</h4>
+                <p><a href="mailto:shivanitraiders@gmail.com" style="color:#64b5f6;text-decoration:none;">shivanitraiders@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal delay-2">
+          <h3>Organic India Order Inquiry</h3>
+          <p class="form-subtitle">Direct agency inventory with fresh batch manufacturing dates.</p>
+
+          <form id="organicForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Store / Clinic / Chemist Name *</label>
+                <input type="text" placeholder="e.g. Sanjeevani Medical Store" required>
+              </div>
+              <div class="form-group">
+                <label>Contact Person *</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>Area in Azamgarh *</label>
+                <input type="text" placeholder="Hospital Road / Market Area" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Products Required (Cases / Units) *</label>
+              <textarea placeholder="e.g. 20 Boxes Tulsi Green Tea Ashwagandha, 10 Jars Organic Ghee 500ml, 15 Bottles Triphala..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn" style="background:linear-gradient(135deg, #2e7d32, #1b5e20);color:#fff;">
+              Submit Wholesale Order →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-transparent.png" alt="Shivani Traders">
+          <p>
+            Authorized Agency Partner for Organic India in Azamgarh. Bringing genuine certified organic 
+            Ayurvedic wellness products to empower healthy conscious living.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Other Brand Agencies</h4>
+          <ul>
+            <li><a href="coca-cola.html">Coca-Cola Agency</a></li>
+            <li><a href="mother-dairy.html">Mother Dairy Agency</a></li>
+            <li><a href="tata-consumer.html">Tata Consumer Agency</a></li>
+            <li><a href="tops.html">Tops Food Agency</a></li>
+            <li><a href="chings.html">Ching's Secret Agency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="index.html">Shivani Traders Home</a></li>
+            <li><a href="broadband.html">Shivani Broadband ISP</a></li>
+            <li><a href="index.html#export">Rice Export Division</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Agency Office</h4>
+          <p style="font-size:0.85rem;line-height:1.6;color:var(--gray-300);">
+            Gambhirpur, Azamgarh,<br>
+            Uttar Pradesh — 276302<br>
+            Traders: +91 9621577274<br>
+            Enterprises: +91 9696130383<br>
+            Email: shivanitraiders@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Shivani Traders — Organic India Authorized Agency. All rights reserved. | Gambhirpur, Azamgarh, Uttar Pradesh (276302)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
